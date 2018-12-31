@@ -1,0 +1,21 @@
+#include<iostream>
+#include<vector>
+
+using std::cin;
+using std::cout;
+using std::endl;
+using std::vector;
+
+int binary_search(const int& num, const int& low, const int& high, const int nums[]){
+  int middle = (low+high)/2;
+  cout << middle << endl;
+  
+}
+
+int main() {
+  int num = 60;
+  int nums[] = {1,2,45,60,78,89,90,200};
+  int low = 0;
+  int high = sizeof(nums)/sizeof(nums[0]);
+  cout << "Index is " << binary_search(num, low, high, nums) << endl;
+}
